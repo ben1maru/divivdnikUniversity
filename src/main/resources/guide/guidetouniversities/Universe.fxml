@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="cards" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="875.0" style="-fx-background-color: #283593;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="guide.guidetouniversities.Universe">
+   <children>
+      <HBox layoutX="193.0" layoutY="14.0" prefHeight="29.0" prefWidth="515.0" style="-fx-background-color: #66B2FF; -fx-background-radius: 10;" AnchorPane.leftAnchor="193.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <ChoiceBox fx:id="regionChioceBox" prefHeight="27.0" prefWidth="252.0" style="-fx-background-radius: 10; -fx-border-color: yellow; -fx-border-radius: 10;" />
+            <TextField fx:id="serchTxt" prefHeight="25.0" prefWidth="268.0" style="-fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: yellow;" />
+            <ImageView fitHeight="26.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../photo/magnifying-glass-svgrepo-com.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <Button fx:id="isBackBtn" layoutX="22.0" layoutY="6.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #003366; -fx-border-color: yellow;">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../photo/chevron-left-svgrepo-com.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <FlowPane fx:id="cardss" layoutX="13.0" layoutY="65.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="558.0" prefWidth="766.0" AnchorPane.bottomAnchor="48.0" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="13.0" AnchorPane.topAnchor="70.0" />
+      <Button fx:id="previousButton" layoutX="398.0" layoutY="861.0" mnemonicParsing="false" text="Button" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="290.0" />
+      <Button fx:id="nextButton" layoutX="558.0" layoutY="861.0" mnemonicParsing="false" text="Button" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="290.0" />
+   </children>
+</AnchorPane>

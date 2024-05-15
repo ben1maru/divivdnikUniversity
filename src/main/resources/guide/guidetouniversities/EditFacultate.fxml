@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="227.0" prefWidth="600.0" style="-fx-background-color: #283593;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="guide.guidetouniversities.EditFacultate">
+   <children>
+      <TextField fx:id="nameTxt" layoutX="100.0" layoutY="96.0" style="-fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: yellow; -fx-border-width: 3;" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="updateButton" layoutX="251.0" layoutY="557.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="98.0" style="-fx-background-color: #FFEB3B; -fx-border-radius: 5; -fx-background-radius: 5; -fx-border-color: white; -fx-border-width: 3;" text="Оновити" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="251.0" AnchorPane.rightAnchor="251.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <TextField fx:id="idTxt" editable="false" layoutX="194.0" layoutY="14.0" style="-fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: yellow; -fx-border-width: 3;" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

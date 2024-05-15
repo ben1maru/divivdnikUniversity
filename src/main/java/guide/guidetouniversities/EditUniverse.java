@@ -13,7 +13,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.stage.Stage;
 
-public class AddUniversity {
+public class EditUniverse {
 
     @FXML
     private ResourceBundle resources;
@@ -26,7 +26,8 @@ public class AddUniversity {
 
     @FXML
     private TextField nameTxt;
-
+    @FXML
+    private TextField idTxt;
     @FXML
     private TextField photoTxt;
 
@@ -79,7 +80,7 @@ public class AddUniversity {
                     regionChoiceBox.setValue(regionName);
                     ratingTxt.setText(rating);
 
-                } else {
+                                   } else {
                     // Університета з вказаним ім'ям не знайдено
                     System.out.println("University with name '" + universityName + "' not found.");
                 }
@@ -165,21 +166,21 @@ public class AddUniversity {
     }
     @FXML
     void initialize() {
-        addCategories();
-        updateButton.setOnAction(event -> {
-            int id = Integer.parseInt(idTxt.getText());
-            updateUniversity(id);
-            Stage stage = (Stage) updateButton.getScene().getWindow();
-            FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(getClass().getResource("CRUDUniverse.fxml"));
-            try {
-                loader.load();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-            Parent root = loader.getRoot();
-            stage.setScene(new Scene(root));
-        });
+addCategories();
+updateButton.setOnAction(event -> {
+    int id = Integer.parseInt(idTxt.getText());
+    updateUniversity(id);
+    Stage stage = (Stage) updateButton.getScene().getWindow();
+    FXMLLoader loader = new FXMLLoader();
+    loader.setLocation(getClass().getResource("CRUDUniverse.fxml"));
+    try {
+        loader.load();
+    } catch (IOException e) {
+        e.printStackTrace();
+    }
+    Parent root = loader.getRoot();
+    stage.setScene(new Scene(root));
+});
 
     }
 

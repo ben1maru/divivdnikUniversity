@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="476.0" style="-fx-background-color: #283593;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="guide.guidetouniversities.CRUDFacultate">
+    <children>
+        <FlowPane fx:id="scrollPanel" layoutX="22.0" layoutY="29.0" prefHeight="312.0" prefWidth="464.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" />
+        <Button fx:id="previousButton" layoutX="130.0" layoutY="353.0" mnemonicParsing="false" onAction="#previousPage" text="Button" AnchorPane.leftAnchor="130.0" AnchorPane.rightAnchor="320.0" />
+        <Button fx:id="nextButton" layoutX="320.0" layoutY="353.0" mnemonicParsing="false" onAction="#nextPage" prefHeight="25.0" prefWidth="52.0" text="Button" AnchorPane.leftAnchor="320.0" AnchorPane.rightAnchor="130.0" />
+        <Button layoutX="196.0" layoutY="350.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="84.0" style="-fx-background-color: #FFEB3B; -fx-border-radius: 5; -fx-background-radius: 5; -fx-border-color: white; -fx-border-width: 3;" text="Додати" AnchorPane.leftAnchor="196.0" AnchorPane.rightAnchor="196.0" />
+
+    </children>
+</AnchorPane>
